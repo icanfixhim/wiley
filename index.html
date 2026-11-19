@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#121818" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="와일리 형제의 버려진 물건을 찾아보세요. 세 개의 물건, 세 개의 이야기." />
+    <title>쓰레기장</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2212%22%20fill%3D%22%23182322%22%2F%3E%3Cpath%20d%3D%22M27%2016%2022%207l8%203%206-4%205%202-4%209c4%206%2010%209%2014%2016%204%207%206%2016%201%2020-6%205-32%205-39%200-5-4-3-13%201-20%204-7%209-10%2013-17Z%22%20fill%3D%22%23839384%22%20stroke%3D%22%23afbcaa%22%20stroke-width%3D%222%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpath%20d%3D%22M29%2024c-8%207-12%2014-11%2023m18-21c5%204%209%209%2011%2015%22%20fill%3D%22none%22%20stroke%3D%22%2353675c%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22m26%2017%2012%201%22%20fill%3D%22none%22%20stroke%3D%22%23d7ac76%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="alley" aria-label="세 봉투가 놓인 뒷골목">
+      <img class="alley-art" src="bag-alley.svg" alt="" />
+      <svg class="bag-definitions" aria-hidden="true" focusable="false"><defs>
+        <linearGradient id="plastic" x1=".18" y1="0" x2=".8" y2="1"><stop stop-color="#59645a"/><stop offset=".24" stop-color="#3b4943"/><stop offset=".6" stop-color="#2e3a36"/><stop offset="1" stop-color="#1a2424"/></linearGradient>
+        <linearGradient id="hem" x1=".2" y1="0" x2=".55" y2="1"><stop stop-color="#6a766a"/><stop offset=".17" stop-color="#3c4942"/><stop offset=".40" stop-color="#4a574e"/><stop offset=".68" stop-color="#303c36"/><stop offset="1" stop-color="#202b29"/></linearGradient>
+        <radialGradient id="floor-shadow"><stop stop-color="#0e1818" stop-opacity=".68"/><stop offset=".68" stop-color="#0e1818" stop-opacity=".42"/><stop offset="1" stop-color="#0e1818" stop-opacity="0"/></radialGradient>
+        <path id="book-bag" d="m102 54 14 1 14 12 22 10 14 16 2 17 9 19-2 13-8 7-53 5-44-3-23-6-8-9 4-23 8-22 22-10 19-15z"/>
+        <path id="tags-bag" d="m100 54 17 1 20 17 19 9 4 14 18 20 7 19-5 12-29 7-33-1-28 4-35-4-20-9 1-18 17-26 16-14 14-8z"/>
+        <path id="ring-bag" d="m102 54 14 1 14 13c7 8 21 13 28 25l10 24 4 21-13 11-28 7-42-2-26-3-18-12 1-18 11-22 11-15 19-14z"/>
+        <g id="creases">
+          <path d="m105 59-21 26-14 36 14-20 5-16zm10 0 13 18 10 30 1-15-9-22z" fill="#728074" opacity=".47"/>
+          <path d="m100 65-19 21-14 36 12-13 9-26zm13-4 4 19-2 27 9-28zm22 26 12 21 12 13-7-16z" fill="#192524" opacity=".67"/>
+          <path d="m57 113-7 16 13 9 22 4-21-11zm33 30 23-10 16 7 22-7-11 11-27-2z" fill="#4f5c52" opacity=".62"/>
+          <path d="m89 84 7-13m26 17 3 13m21 18 9 10-5 7m-91-6 10 4" fill="none" stroke="#839084" stroke-opacity=".37" stroke-width="1.4"/>
+        </g>
+        <g id="knot">
+          <path d="m103 54-13-16 4-5 11 6 6-12 6 8 9-3-4 12-7 10z" fill="url(#plastic)" stroke="#1e2926" stroke-width="1.7"/>
+          <path d="m96 38 9 9m9-14-3 14m6-7 5-6" stroke="#8a9486" stroke-opacity=".44" fill="none"/>
+          <path d="m100 54 16 2m-15 1 14-3" stroke="#a89775" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="m115 55 9 4 3 6" fill="none" stroke="#918369" stroke-width="1.4"/>
+        </g>
+        <g id="back-rim">
+          <ellipse cx="111" cy="144" rx="98" ry="16" fill="url(#floor-shadow)"/>
+          <path d="M19 143q13-7 17-16c3-8 8-10 10-23q2-11-2-20c11 3 15 13 24 13 11 1 14-7 22-8 11-2 22 6 35 5 15-1 21-12 32-12 8 0 10 6 16 7q10 1 17-7c-2 14-11 24-8 31 3 9 11 12 18 17-7 5-17 5-27 10-29 13-65 14-100 11-21-1-33-8-54-8Z" fill="url(#plastic)"/>
+          <path d="M47 86c8 8 10 16 21 18 11 1 16-7 25-7-8 4-13 14-22 13-12-2-18-16-24-24Zm99 10c14-12 20 4 35-3-10 12-11 22-22 25 7-9 11-16 7-17-8-3-14-4-20-5Z" fill="#788477" opacity=".42"/>
+          <path d="M33 135c16-11 18-22 21-29-3 14 7 17 19 14 15-4 20-13 39-12 16 2 29-5 38-7-5 9 0 12 11 11 8 0 14-6 19-12-6 15-3 23 10 30-24 7-44 14-72 16-29 1-59-3-85-11Z" fill="#1b2725"/>
+          <path d="M46 86q6 3 11 11m17 5c7-1 11-8 19-8m58-6q7-4 15 1m8 4q8 0 14-7" fill="none" stroke="#879182" stroke-opacity=".52" stroke-linecap="round"/>
+        </g>
+        <g id="front-rim">
+          <path d="M14 144c11-2 16-9 22-16 4-5 8-10 12-11-3 10-4 16 5 18 10 2 19-1 29 4 10 6 19 7 32 4 13-4 23-3 33-6 14-4 19-15 29-19-3 8-4 13 5 15 9 3 14-1 23 1-8 3-12 8-24 9-10 1-17 8-35 8-13 0-23 4-34 5-18 2-27-5-43-5-17 1-23 4-39 0-6-2-10-5-15-7Z" fill="url(#hem)"/>
+          <path d="M15 144c12-3 17-11 26-18-5 7-8 16-17 18 7 4 16 4 24 3-13 4-23 3-33-3Zm35-8q17 4 29 4c15 2 20 13 39 8-17 8-26 0-41-3-14-2-19-2-27-9Zm80 12c24-6 29-4 39-14 6-6 9-8 14-9-8 6-9 13-21 16-11 2-20 6-32 7Z" fill="#637163" opacity=".63"/>
+          <path d="M31 146q8-1 17-7m14 11q11-3 22 0m34 3c10-1 16-6 27-5m28-10q10 2 18-1" fill="none" stroke="#182421" stroke-opacity=".73" stroke-width="1.4"/>
+          <path d="M18 143q8-2 15-10m21 4q9 2 16 1m15 5q8 4 13 5m56-10q9-4 14-10m15 7q7 1 15-1" fill="none" stroke="#92a08e" stroke-opacity=".52" stroke-linecap="round"/>
+        </g>
+      </defs></svg>
+
+      <div class="parcel object object-book">
+        <span class="object-glow"></span>
+        <svg class="bag-layer tied" viewBox="0 0 220 178" aria-hidden="true"><g class="bag-body"><use href="#book-bag" fill="url(#plastic)" stroke="#1b2725" stroke-width="2"/><use href="#creases"/></g><g class="bag-knot"><use href="#knot"/></g></svg>
+        <svg class="bag-layer mouth-back" viewBox="0 0 220 178" aria-hidden="true"><g transform="translate(0 -68) scale(1 1.47)"><use href="#back-rim"/></g></svg>
+        <button class="bag-handle" type="button" aria-label="각진 봉투 열기"></button>
+        <button class="find" type="button" data-character="grant" aria-label="버려진 책: 그랜트 와일리 봇 보기" hidden>
+        <svg viewBox="0 0 220 178" aria-hidden="true" focusable="false">
+          <path d="m84 40 112 21-62 101-114-22z" fill="#2e4944" stroke="#192a29" stroke-width="2"/>
+          <path d="m83 27 110 20-61 100-107-21 1 12 107 21 61-99V47" fill="#cabca2"/>
+          <path d="m132 147 61-100v13l-61 99z" fill="#ac9d83"/>
+          <path d="m28 129 102 20m-102-16 101 20m7-4 53-86m-52 90 52-85" fill="none" stroke="#887f6c" stroke-width="1" opacity=".66"/>
+          <path d="m79 143 12 2-9 14-3-5-8 2z" fill="#994c40"/>
+          <g transform="matrix(.88 .165 -.38 .61 84 24)">
+            <rect x="0" y="0" width="127" height="166" rx="2" fill="#c7bda5" stroke="#394d47" stroke-width="2.2"/>
+            <path d="M0 0h12v166H0z" fill="#354f48"/>
+            <path d="M14 2v162" stroke="#a39d87" stroke-width="2"/>
+            <g fill="#273a35" font-family="Arial, sans-serif" font-weight="700">
+              <text x="23" y="31" font-size="15" textLength="87" lengthAdjust="spacingAndGlyphs">Love Is Not a</text>
+              <text x="23" y="61" font-size="22" textLength="89" lengthAdjust="spacingAndGlyphs">Zero-Sum</text>
+              <text x="22" y="87" font-size="26" letter-spacing="-1">Game</text>
+            </g>
+            <path d="M24 99h88" stroke="#968e75"/>
+            <circle cx="58" cy="127" r="22" fill="#526c61"/>
+            <circle cx="78" cy="127" r="22" fill="none" stroke="#ae684d" stroke-width="4"/>
+          </g>
+          <path d="m21 125 9 2v13l-8-2q-3-6-1-13z" fill="#354c45"/>
+        </svg>
+        </button>
+        <svg class="bag-layer mouth-front" viewBox="0 0 220 178" aria-hidden="true"><use href="#front-rim"/></svg>
+      </div>
+
+      <div class="parcel object object-tags">
+        <span class="object-glow"></span>
+        <svg class="bag-layer tied" viewBox="0 0 220 178" aria-hidden="true"><g class="bag-body"><use href="#tags-bag" fill="url(#plastic)" stroke="#1b2725" stroke-width="2"/><use href="#creases"/></g><g class="bag-knot"><use href="#knot"/></g></svg>
+        <svg class="bag-layer mouth-back" viewBox="0 0 220 178" aria-hidden="true"><use href="#back-rim"/></svg>
+        <button class="bag-handle" type="button" aria-label="옆으로 누운 봉투 열기"></button>
+        <button class="find" type="button" data-character="luke" aria-label="군번줄: 루크 와일리 봇 보기" hidden>
+        <svg viewBox="0 0 220 178" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="tag-steel" x2=".85" y2="1"><stop stop-color="#83908a"/><stop offset=".38" stop-color="#b8beb0"/><stop offset=".5" stop-color="#a6aea1"/><stop offset="1" stop-color="#707d77"/></linearGradient>
+            <path id="bead-loop" d="M80 87C47 86 24 59 38 40c13-18 34-9 55-19 25-11 72-3 80 19 10 27-23 41-38 49"/>
+          </defs>
+          <g fill="none">
+            <use href="#bead-loop" stroke="#434e49" stroke-width="2"/>
+            <use href="#bead-loop" stroke="#abb0a0" stroke-width="3.7" stroke-linecap="round" stroke-dasharray=".35 5"/>
+          </g>
+          <g transform="translate(125 69) rotate(31)">
+            <rect width="40" height="71" rx="12" fill="#747e75" stroke="#414b46" stroke-width="2"/>
+            <rect x="3" y="3" width="34" height="64" rx="9" fill="none" stroke="#a5ac9c"/>
+            <circle cx="18" cy="10" r="3.4" fill="#303b35"/>
+            <path d="M8 25h23M8 32h17m-17 8h20m-20 9h12" stroke="#4b574e" stroke-width="1.8"/>
+          </g>
+          <g transform="translate(62 85) rotate(-28)">
+            <rect x="0" y="1" width="49" height="78" rx="14" fill="#515d56" stroke="#3b4640" stroke-width="2"/>
+            <rect width="48" height="75" rx="13" fill="url(#tag-steel)" stroke="#bdc4b6" stroke-width="1.6"/>
+            <rect x="3" y="3" width="42" height="69" rx="10" fill="none" stroke="#758077"/>
+            <circle cx="19" cy="10" r="3.8" fill="#344039" stroke="#c6ccbc"/>
+            <g font-family="monospace" font-size="8" font-weight="bold" fill="#58655d">
+              <text x="7" y="30">WILEY</text><text x="7" y="41">LUKE</text>
+            </g>
+            <path d="M8 50h24m-24 5h19m-19 5h10" fill="none" stroke="#637168" stroke-width="1.4"/>
+          </g>
+          <path d="M68 84q7 1 15 1m55-5q-3 4-4 7" fill="none" stroke="#aeb6a8" stroke-width="3.4" stroke-dasharray=".4 4.6" stroke-linecap="round"/>
+        </svg>
+        </button>
+        <svg class="bag-layer mouth-front" viewBox="0 0 220 178" aria-hidden="true"><use href="#front-rim"/></svg>
+      </div>
+
+      <div class="parcel object object-ring">
+        <span class="object-glow"></span>
+        <svg class="bag-layer tied" viewBox="0 0 220 178" aria-hidden="true"><g class="bag-body"><use href="#ring-bag" fill="url(#plastic)" stroke="#1b2725" stroke-width="2"/><use href="#creases"/></g><g class="bag-knot"><use href="#knot"/></g></svg>
+        <svg class="bag-layer mouth-back" viewBox="0 0 220 178" aria-hidden="true"><use href="#back-rim"/></svg>
+        <button class="bag-handle" type="button" aria-label="작고 둥근 봉투 열기"></button>
+        <button class="find" type="button" data-character="eric" aria-label="전달하지 못한 반지: 에릭 와일리 봇 보기" hidden>
+        <svg viewBox="0 0 220 178" aria-hidden="true" focusable="false">
+          <g transform="matrix(.95 .16 -.12 .8 76 91)">
+            <rect x="0" y="-73" width="100" height="75" rx="10" fill="#642c37" stroke="#44252e" stroke-width="2"/>
+            <rect x="3" y="-70" width="94" height="67" rx="8" fill="#934653"/>
+            <rect x="9" y="-63" width="82" height="55" rx="6" fill="#723440"/>
+            <path d="M14-54q0-5 5-5h64" fill="none" stroke="#aa666c" stroke-width="1.4" opacity=".55"/>
+          </g>
+          <path d="m171 107-28 26.6v16l28-26.6z" fill="#4b2631"/>
+          <g transform="matrix(.95 .16 0 1 48 117.6)">
+            <path d="M0-2h100v14q0 5-6 5H6q-6 0-6-5z" fill="#76343f" stroke="#502832" stroke-width="1.5"/>
+            <rect x="44" y="3" width="11" height="4" rx="1.6" fill="#ad9063"/>
+          </g>
+          <g transform="matrix(.95 .16 -.4 .38 76 91)">
+            <rect width="100" height="70" rx="8" fill="#984955" stroke="#62313c" stroke-width="2"/>
+            <rect x="6" y="6" width="88" height="57" rx="7" fill="#6f303c"/>
+            <path d="M14 40q34-5 72 0" fill="none" stroke="#44242d" stroke-width="5"/>
+          </g>
+          <g transform="translate(109 113) rotate(9.55)">
+            <path d="M-11 0c-4-8-2-19 5-23 7-4 16 0 18 7q3 9-1 16" fill="none" stroke="#8c704e" stroke-width="4.7"/>
+            <path d="M-10-1c-4-9-1-18 5-21s12-1 15 5q3 7 1 14" fill="none" stroke="#d3b783" stroke-width="2.9"/>
+            <path d="m-7-25 4-5h7l5 5-8 7z" fill="#b2c0bb" stroke="#81918c"/>
+            <path d="m-3-30 4 5-8 0zm4 5 3-5 5 5z" fill="#deded0"/>
+          </g>
+          <g transform="matrix(.95 .16 -.4 .38 76 91)">
+            <path d="M9 40q40-4 82 1v10q0 10-8 10H18q-9 0-9-9z" fill="#843c49"/>
+          </g>
+        </svg>
+        </button>
+        <svg class="bag-layer mouth-front" viewBox="0 0 220 178" aria-hidden="true"><use href="#front-rim"/></svg>
+      </div>
+    </main>
+
+    <dialog id="pickup-dialog" aria-labelledby="card-name">
+      <section id="pickup-card">
+        <button type="button" id="card-close" aria-label="카드 닫기">×</button>
+        <article class="paper-card">
+          <p class="card-ref" data-field="number"></p>
+          <div class="card-heading">
+            <button type="button" id="photo-frame" aria-label="사진 크게 보기" aria-haspopup="dialog" disabled></button>
+            <div>
+              <p class="card-item" data-field="name"></p>
+              <h2 id="card-name" lang="en" data-field="english"></h2>
+              <p class="card-meta" lang="en" data-field="meta"></p>
+            </div>
+          </div>
+          <p class="card-quote" data-field="quote"></p>
+          <p class="card-description" data-field="description"></p>
+        </article>
+        <div class="card-actions">
+          <button type="button" data-reading="sheet" data-reader-label="Description">설명</button>
+          <button type="button" data-reading="greeting" data-reader-label="Greeting">그리팅</button>
+          <button type="button" id="take-card">주워가기</button>
+        </div>
+        <p id="card-status" role="status"></p>
+      </section>
+      <section id="card-reader" hidden>
+        <div class="reader-toolbar">
+          <button type="button" id="reader-back">← 돌아가기</button>
+        </div>
+        <article class="reader-page">
+          <h2 id="reader-title" tabindex="-1"></h2>
+          <div id="reader-text"></div>
+        </article>
+      </section>
+    </dialog>
+    <dialog id="portrait-dialog" aria-label="사진 크게 보기">
+      <button id="portrait-close" type="button" aria-label="사진 닫기" autofocus><span aria-hidden="true">×</span></button>
+      <img id="portrait-image" alt="" />
+      <p id="portrait-status" role="status"></p>
+    </dialog>
+    <dialog id="pickup-confirm" aria-labelledby="pickup-question">
+      <h2 id="pickup-question">정말 주워가시겠습니까?</h2>
+      <div class="choice-row">
+        <a id="pickup-yes" download aria-disabled="true">예</a>
+        <button type="button" id="pickup-no" autofocus>아니오</button>
+      </div>
+      <p id="pickup-status" role="status"></p>
+    </dialog>
+  <script>
+      document.querySelectorAll(".bag-handle").forEach(handle => {
+        handle.addEventListener("click", () => {
+          const parcel = handle.closest(".parcel");
+          const item = parcel.querySelector(".find");
+          parcel.classList.add("is-open");
+          handle.hidden = true;
+          item.hidden = false;
+          item.focus({ preventScroll: true });
+        });
+      });
+    </script>
+  </body>
+</html>
